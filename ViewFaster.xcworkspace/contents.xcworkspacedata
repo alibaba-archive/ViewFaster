@@ -2,9 +2,9 @@
 <Workspace
    version = "1.0">
    <FileRef
-      location = "group:ViewFasterDemo/ViewFasterDemo.xcodeproj">
+      location = "group:ViewFaster.xcodeproj">
    </FileRef>
    <FileRef
-      location = "group:ViewFaster.xcodeproj">
+      location = "group:ViewFasterDemo/ViewFasterDemo.xcodeproj">
    </FileRef>
 </Workspace>
