@@ -37,7 +37,6 @@
 		E582F7161CF2D6FE0020D7C0 /* ViewFasterDemoTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ViewFasterDemoTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		E582F71A1CF2D6FE0020D7C0 /* ViewFasterDemoTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewFasterDemoTests.swift; sourceTree = "<group>"; };
 		E582F71C1CF2D6FE0020D7C0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		E582F7271CF2DBE70020D7C0 /* ViewFaster.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; name = ViewFaster.framework; path = "/Users/mrche/Library/Developer/Xcode/DerivedData/ViewFaster-eyyglwrqtadihrfslorjqemppakd/Build/Products/Debug-iphoneos/ViewFaster.framework"; sourceTree = "<absolute>"; };
 		E582F72B1CF2E5AF0020D7C0 /* ViewFaster.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ViewFaster.framework; path = "../../../../Library/Developer/Xcode/DerivedData/ViewFaster-eyyglwrqtadihrfslorjqemppakd/Build/Products/Debug-iphonesimulator/ViewFaster.framework"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -64,7 +63,6 @@
 			isa = PBXGroup;
 			children = (
 				E582F72B1CF2E5AF0020D7C0 /* ViewFaster.framework */,
-				E582F7271CF2DBE70020D7C0 /* ViewFaster.framework */,
 				E582F7041CF2D6FE0020D7C0 /* ViewFasterDemo */,
 				E582F7191CF2D6FE0020D7C0 /* ViewFasterDemoTests */,
 				E582F7031CF2D6FE0020D7C0 /* Products */,
@@ -394,6 +392,7 @@
 				E582F7211CF2D6FE0020D7C0 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		E582F7221CF2D6FE0020D7C0 /* Build configuration list for PBXNativeTarget "ViewFasterDemoTests" */ = {
 			isa = XCConfigurationList;
@@ -402,6 +401,7 @@
 				E582F7241CF2D6FE0020D7C0 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
