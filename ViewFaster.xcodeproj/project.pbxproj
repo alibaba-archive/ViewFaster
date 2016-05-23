@@ -1,0 +1,402 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		E582F6E31CF2D6BB0020D7C0 /* ViewFaster.h in Headers */ = {isa = PBXBuildFile; fileRef = E582F6E21CF2D6BB0020D7C0 /* ViewFaster.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		E582F6EA1CF2D6BB0020D7C0 /* ViewFaster.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E582F6DF1CF2D6BB0020D7C0 /* ViewFaster.framework */; };
+		E582F6EF1CF2D6BB0020D7C0 /* ViewFasterTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E582F6EE1CF2D6BB0020D7C0 /* ViewFasterTests.swift */; };
+		E582F7261CF2D7330020D7C0 /* ViewFaster.swift in Sources */ = {isa = PBXBuildFile; fileRef = E582F7251CF2D7330020D7C0 /* ViewFaster.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		E582F6EB1CF2D6BB0020D7C0 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = E582F6D61CF2D6BB0020D7C0 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = E582F6DE1CF2D6BB0020D7C0;
+			remoteInfo = ViewFaster;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		E582F6DF1CF2D6BB0020D7C0 /* ViewFaster.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = ViewFaster.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		E582F6E21CF2D6BB0020D7C0 /* ViewFaster.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewFaster.h; sourceTree = "<group>"; };
+		E582F6E41CF2D6BB0020D7C0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E582F6E91CF2D6BB0020D7C0 /* ViewFasterTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ViewFasterTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		E582F6EE1CF2D6BB0020D7C0 /* ViewFasterTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewFasterTests.swift; sourceTree = "<group>"; };
+		E582F6F01CF2D6BB0020D7C0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E582F7251CF2D7330020D7C0 /* ViewFaster.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewFaster.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		E582F6DB1CF2D6BB0020D7C0 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E582F6E61CF2D6BB0020D7C0 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E582F6EA1CF2D6BB0020D7C0 /* ViewFaster.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		E582F6D51CF2D6BB0020D7C0 = {
+			isa = PBXGroup;
+			children = (
+				E582F6E11CF2D6BB0020D7C0 /* ViewFaster */,
+				E582F6ED1CF2D6BB0020D7C0 /* ViewFasterTests */,
+				E582F6E01CF2D6BB0020D7C0 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		E582F6E01CF2D6BB0020D7C0 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				E582F6DF1CF2D6BB0020D7C0 /* ViewFaster.framework */,
+				E582F6E91CF2D6BB0020D7C0 /* ViewFasterTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		E582F6E11CF2D6BB0020D7C0 /* ViewFaster */ = {
+			isa = PBXGroup;
+			children = (
+				E582F6E21CF2D6BB0020D7C0 /* ViewFaster.h */,
+				E582F7251CF2D7330020D7C0 /* ViewFaster.swift */,
+				E582F6E41CF2D6BB0020D7C0 /* Info.plist */,
+			);
+			path = ViewFaster;
+			sourceTree = "<group>";
+		};
+		E582F6ED1CF2D6BB0020D7C0 /* ViewFasterTests */ = {
+			isa = PBXGroup;
+			children = (
+				E582F6EE1CF2D6BB0020D7C0 /* ViewFasterTests.swift */,
+				E582F6F01CF2D6BB0020D7C0 /* Info.plist */,
+			);
+			path = ViewFasterTests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		E582F6DC1CF2D6BB0020D7C0 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E582F6E31CF2D6BB0020D7C0 /* ViewFaster.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		E582F6DE1CF2D6BB0020D7C0 /* ViewFaster */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E582F6F31CF2D6BB0020D7C0 /* Build configuration list for PBXNativeTarget "ViewFaster" */;
+			buildPhases = (
+				E582F6DA1CF2D6BB0020D7C0 /* Sources */,
+				E582F6DB1CF2D6BB0020D7C0 /* Frameworks */,
+				E582F6DC1CF2D6BB0020D7C0 /* Headers */,
+				E582F6DD1CF2D6BB0020D7C0 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = ViewFaster;
+			productName = ViewFaster;
+			productReference = E582F6DF1CF2D6BB0020D7C0 /* ViewFaster.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		E582F6E81CF2D6BB0020D7C0 /* ViewFasterTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E582F6F61CF2D6BB0020D7C0 /* Build configuration list for PBXNativeTarget "ViewFasterTests" */;
+			buildPhases = (
+				E582F6E51CF2D6BB0020D7C0 /* Sources */,
+				E582F6E61CF2D6BB0020D7C0 /* Frameworks */,
+				E582F6E71CF2D6BB0020D7C0 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				E582F6EC1CF2D6BB0020D7C0 /* PBXTargetDependency */,
+			);
+			name = ViewFasterTests;
+			productName = ViewFasterTests;
+			productReference = E582F6E91CF2D6BB0020D7C0 /* ViewFasterTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		E582F6D61CF2D6BB0020D7C0 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0730;
+				LastUpgradeCheck = 0730;
+				ORGANIZATIONNAME = HarriesChen;
+				TargetAttributes = {
+					E582F6DE1CF2D6BB0020D7C0 = {
+						CreatedOnToolsVersion = 7.3.1;
+					};
+					E582F6E81CF2D6BB0020D7C0 = {
+						CreatedOnToolsVersion = 7.3.1;
+					};
+				};
+			};
+			buildConfigurationList = E582F6D91CF2D6BB0020D7C0 /* Build configuration list for PBXProject "ViewFaster" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = E582F6D51CF2D6BB0020D7C0;
+			productRefGroup = E582F6E01CF2D6BB0020D7C0 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				E582F6DE1CF2D6BB0020D7C0 /* ViewFaster */,
+				E582F6E81CF2D6BB0020D7C0 /* ViewFasterTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		E582F6DD1CF2D6BB0020D7C0 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E582F6E71CF2D6BB0020D7C0 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		E582F6DA1CF2D6BB0020D7C0 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E582F7261CF2D7330020D7C0 /* ViewFaster.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E582F6E51CF2D6BB0020D7C0 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E582F6EF1CF2D6BB0020D7C0 /* ViewFasterTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		E582F6EC1CF2D6BB0020D7C0 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = E582F6DE1CF2D6BB0020D7C0 /* ViewFaster */;
+			targetProxy = E582F6EB1CF2D6BB0020D7C0 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		E582F6F11CF2D6BB0020D7C0 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		E582F6F21CF2D6BB0020D7C0 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		E582F6F41CF2D6BB0020D7C0 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = ViewFaster/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.harrieschen.ViewFaster;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		E582F6F51CF2D6BB0020D7C0 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = ViewFaster/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.harrieschen.ViewFaster;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+			};
+			name = Release;
+		};
+		E582F6F71CF2D6BB0020D7C0 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = ViewFasterTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.harrieschen.ViewFasterTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		E582F6F81CF2D6BB0020D7C0 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = ViewFasterTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.harrieschen.ViewFasterTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		E582F6D91CF2D6BB0020D7C0 /* Build configuration list for PBXProject "ViewFaster" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E582F6F11CF2D6BB0020D7C0 /* Debug */,
+				E582F6F21CF2D6BB0020D7C0 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		E582F6F31CF2D6BB0020D7C0 /* Build configuration list for PBXNativeTarget "ViewFaster" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E582F6F41CF2D6BB0020D7C0 /* Debug */,
+				E582F6F51CF2D6BB0020D7C0 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		E582F6F61CF2D6BB0020D7C0 /* Build configuration list for PBXNativeTarget "ViewFasterTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E582F6F71CF2D6BB0020D7C0 /* Debug */,
+				E582F6F81CF2D6BB0020D7C0 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = E582F6D61CF2D6BB0020D7C0 /* Project object */;
+}
