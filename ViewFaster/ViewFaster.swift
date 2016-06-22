@@ -72,6 +72,9 @@ public class ViewFaster: NSObject {
     
     func _disable() {
         
+        FPSLabel.removeFromSuperview()
+        window.hidden = true
+        running = false
     }
     
     lazy var displayLink: CADisplayLink = {
@@ -136,7 +139,8 @@ public class ViewFaster: NSObject {
     }
     
     func stop() {
-        
+        sceneView.removeFromSuperview()
+        self.displayLink.invalidate()
     }
     
     func clearLastSecondOfFrameTimes() {

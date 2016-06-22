@@ -7,7 +7,7 @@
 //
 
 import UIKit
-import ViewFaster
+
 
 
 @UIApplicationMain
@@ -23,7 +23,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         window.rootViewController = ViewController()
         window.makeKeyWindow()
         
-        ViewFaster.shareInstance.enable = true
+        
         return true
     }
 
