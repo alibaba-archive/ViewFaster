@@ -7,13 +7,14 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		D3BBF19A1D4712A100C8814E /* ViewFaster.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D3BBF1991D4712A100C8814E /* ViewFaster.framework */; };
+		D3BBF19B1D4712A100C8814E /* ViewFaster.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = D3BBF1991D4712A100C8814E /* ViewFaster.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		E582F7061CF2D6FE0020D7C0 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E582F7051CF2D6FE0020D7C0 /* AppDelegate.swift */; };
 		E582F7081CF2D6FE0020D7C0 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E582F7071CF2D6FE0020D7C0 /* ViewController.swift */; };
 		E582F70B1CF2D6FE0020D7C0 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E582F7091CF2D6FE0020D7C0 /* Main.storyboard */; };
 		E582F70D1CF2D6FE0020D7C0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E582F70C1CF2D6FE0020D7C0 /* Assets.xcassets */; };
 		E582F7101CF2D6FE0020D7C0 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E582F70E1CF2D6FE0020D7C0 /* LaunchScreen.storyboard */; };
 		E582F71B1CF2D6FE0020D7C0 /* ViewFasterDemoTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E582F71A1CF2D6FE0020D7C0 /* ViewFasterDemoTests.swift */; };
-		E582F72C1CF2E5AF0020D7C0 /* ViewFaster.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E582F72B1CF2E5AF0020D7C0 /* ViewFaster.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -26,7 +27,22 @@
 		};
 /* End PBXContainerItemProxy section */
 
+/* Begin PBXCopyFilesBuildPhase section */
+		D3BBF19C1D4712A100C8814E /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				D3BBF19B1D4712A100C8814E /* ViewFaster.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
+		D3BBF1991D4712A100C8814E /* ViewFaster.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; name = ViewFaster.framework; path = "/Users/hongxin/Library/Developer/Xcode/DerivedData/ViewFaster-dufvalsyvuftrbfvppywlrqosanx/Build/Products/Debug-iphonesimulator/ViewFaster.framework"; sourceTree = "<absolute>"; };
 		E582F7021CF2D6FE0020D7C0 /* ViewFasterDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ViewFasterDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E582F7051CF2D6FE0020D7C0 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		E582F7071CF2D6FE0020D7C0 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -37,7 +53,6 @@
 		E582F7161CF2D6FE0020D7C0 /* ViewFasterDemoTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ViewFasterDemoTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		E582F71A1CF2D6FE0020D7C0 /* ViewFasterDemoTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewFasterDemoTests.swift; sourceTree = "<group>"; };
 		E582F71C1CF2D6FE0020D7C0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		E582F72B1CF2E5AF0020D7C0 /* ViewFaster.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ViewFaster.framework; path = "../../../../Library/Developer/Xcode/DerivedData/ViewFaster-eyyglwrqtadihrfslorjqemppakd/Build/Products/Debug-iphonesimulator/ViewFaster.framework"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -45,7 +60,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				E582F72C1CF2E5AF0020D7C0 /* ViewFaster.framework in Frameworks */,
+				D3BBF19A1D4712A100C8814E /* ViewFaster.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -62,7 +77,7 @@
 		E582F6F91CF2D6FE0020D7C0 = {
 			isa = PBXGroup;
 			children = (
-				E582F72B1CF2E5AF0020D7C0 /* ViewFaster.framework */,
+				D3BBF1991D4712A100C8814E /* ViewFaster.framework */,
 				E582F7041CF2D6FE0020D7C0 /* ViewFasterDemo */,
 				E582F7191CF2D6FE0020D7C0 /* ViewFasterDemoTests */,
 				E582F7031CF2D6FE0020D7C0 /* Products */,
@@ -110,6 +125,7 @@
 				E582F6FE1CF2D6FE0020D7C0 /* Sources */,
 				E582F6FF1CF2D6FE0020D7C0 /* Frameworks */,
 				E582F7001CF2D6FE0020D7C0 /* Resources */,
+				D3BBF19C1D4712A100C8814E /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
@@ -281,7 +297,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
@@ -320,7 +336,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
 				VALIDATE_PRODUCT = YES;

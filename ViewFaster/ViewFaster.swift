@@ -43,7 +43,7 @@ public class ViewFaster: NSObject {
     }
     
     override init() {
-        for i in 0...ViewFaster.kHardwareFramesPerSecond {
+        for _ in 0...ViewFaster.kHardwareFramesPerSecond {
             _lastSecondOfFrameTimes.append(CACurrentMediaTime())
         }
     }
@@ -89,7 +89,7 @@ public class ViewFaster: NSObject {
     
     func displayLinkWillDraw() {
         let currentFrameTime = displayLink.timestamp
-        let frameDuartion = currentFrameTime - lastFrameTime()
+//        let frameDuartion = currentFrameTime - lastFrameTime()
     
         recordFrameTime(currentFrameTime)
         updateFPSLabel()
@@ -104,7 +104,7 @@ public class ViewFaster: NSObject {
     }
     
     func recordFrameTime(timeInterval: CFTimeInterval) {
-        ++frameNumber
+        frameNumber += 1
         _lastSecondOfFrameTimes[self.frameNumber % ViewFaster.kHardwareFramesPerSecond] = timeInterval;
     }
     
@@ -154,7 +154,7 @@ public class ViewFaster: NSObject {
         let lastFrameTime = CACurrentMediaTime() - kNormalFrameDuration
         for i in 0..<ViewFaster.kHardwareFramesPerSecond {
             if 1.0 <= lastFrameTime - _lastSecondOfFrameTimes[i] {
-                ++droppedFrameCount
+                droppedFrameCount += 1
             }
         }
         return droppedFrameCount
