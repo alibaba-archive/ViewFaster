@@ -21,12 +21,11 @@ class ViewController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
 
-    @IBAction func open(sender: AnyObject) {
-        ViewFaster.shareInstance.enable = true
+    @IBAction func open(_ sender: AnyObject) {
+        ViewFaster.shareInstance.isEnabled = true
     }
 
-    @IBAction func close(sender: AnyObject) {
-        ViewFaster.shareInstance.enable = false
+    @IBAction func close(_ sender: AnyObject) {
+        ViewFaster.shareInstance.isEnabled = false
     }
 }
-

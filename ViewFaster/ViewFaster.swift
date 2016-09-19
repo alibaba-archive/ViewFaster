@@ -9,155 +9,140 @@
 import Foundation
 import SpriteKit
 
-public class ViewFaster: NSObject {
-    
-    public static var shareInstance: ViewFaster = ViewFaster()
-    
-    static let kHardwareFramesPerSecond = 60
-    
-    var _lastSecondOfFrameTimes = [CFTimeInterval]()
-    
-    var frameNumber = 0
-    
+open class ViewFaster: NSObject {
+
+    open static var shareInstance: ViewFaster = ViewFaster()
+
     static let kFPSLabelWidth = 60
-    
-    public var enable: Bool = false {
+    static let kHardwareFramesPerSecond = 60
+    var lastSecondOfFrameTimes = [CFTimeInterval]()
+    var frameNumber = 0
+
+    open var isEnabled: Bool = false {
         didSet {
-            if enable {
-                _enable()
+            if isEnabled {
+                enableFPS()
             } else {
-                _disable()
+                disableFPS()
             }
         }
     }
-    
-    var running: Bool = false {
+
+    var isRunning: Bool = false {
         didSet {
-            if running {
+            if isRunning {
                 start()
             } else {
                 stop()
             }
         }
-        
     }
-    
+
     override init() {
         for _ in 0...ViewFaster.kHardwareFramesPerSecond {
-            _lastSecondOfFrameTimes.append(CACurrentMediaTime())
+            lastSecondOfFrameTimes.append(CACurrentMediaTime())
         }
     }
-    
+
     lazy var window: UIWindow = {
-        let window = UIWindow(frame: UIScreen.mainScreen().bounds)
+        let window = UIWindow(frame: UIScreen.main.bounds)
         window.rootViewController = UIViewController()
         window.windowLevel = UIWindowLevelStatusBar + 10.0
-        window.userInteractionEnabled = false
-        
+        window.isUserInteractionEnabled = false
+
         return window
     }()
-    
+
     lazy var FPSLabel: UILabel = {
         let label = UILabel(frame: CGRect(x: 0, y: 0, width: kFPSLabelWidth, height: 20))
-        label.backgroundColor = UIColor.redColor()
-        label.textAlignment = .Center
+        label.backgroundColor = UIColor.red
+        label.textAlignment = .center
         return label
     }()
-    
-    func _enable() {
+
+    func enableFPS() {
         window.addSubview(FPSLabel)
-        window.hidden = false
-        running = true
+        window.isHidden = false
+        isRunning = true
     }
-    
-    func _disable() {
-        
+
+    func disableFPS() {
         FPSLabel.removeFromSuperview()
-        window.hidden = true
-        running = false
+        window.isHidden = true
+        isRunning = false
     }
-    
+
     lazy var displayLink: CADisplayLink = {
         let displayLink = CADisplayLink(target: self, selector: #selector(displayLinkWillDraw))
         return displayLink
     }()
-    
+
     lazy var sceneView: SKView = {
         let sceneView = SKView(frame: CGRect(x: 0, y: 0, width: 10, height: 1))
         return sceneView
     }()
-    
+
     func displayLinkWillDraw() {
         let currentFrameTime = displayLink.timestamp
-//        let frameDuartion = currentFrameTime - lastFrameTime()
-    
+
         recordFrameTime(currentFrameTime)
         updateFPSLabel()
     }
-    
-    func lastFrameTime() -> CFTimeInterval{
+
+    func lastFrameTime() -> CFTimeInterval {
         if frameNumber <= ViewFaster.kHardwareFramesPerSecond {
-            return _lastSecondOfFrameTimes[self.frameNumber]
+            return lastSecondOfFrameTimes[self.frameNumber]
         } else {
             return CACurrentMediaTime()
         }
     }
-    
-    func recordFrameTime(timeInterval: CFTimeInterval) {
+
+    func recordFrameTime(_ timeInterval: CFTimeInterval) {
         frameNumber += 1
-        _lastSecondOfFrameTimes[self.frameNumber % ViewFaster.kHardwareFramesPerSecond] = timeInterval;
+        lastSecondOfFrameTimes[frameNumber % ViewFaster.kHardwareFramesPerSecond] = timeInterval
     }
-    
+
     func updateFPSLabel() {
-        
         let fps = ViewFaster.kHardwareFramesPerSecond - droppedFrameCountInLastSecond()
-        
+
         if fps >= 56 {
-            FPSLabel.backgroundColor = UIColor.greenColor()
+            FPSLabel.backgroundColor = UIColor.green
         } else if fps >= 45 {
-            FPSLabel.backgroundColor = UIColor.orangeColor()
+            FPSLabel.backgroundColor = UIColor.orange
         } else {
-            FPSLabel.backgroundColor = UIColor.redColor()
+            FPSLabel.backgroundColor = UIColor.red
         }
-        
         FPSLabel.text = "\(fps)"
     }
-    
+
     func start() {
-        self.displayLink.addToRunLoop(NSRunLoop.mainRunLoop(), forMode: NSRunLoopCommonModes)
+        self.displayLink.add(to: RunLoop.main, forMode: RunLoopMode.commonModes)
         clearLastSecondOfFrameTimes()
-        
-        // Low framerates can be caused by CPU activity on the main thread or by long compositing time in (I suppose)
-        // the graphics driver. If compositing time is the problem, and it doesn't require on any main thread activity
-        // between frames, then the framerate can drop without CADisplayLink detecting it.
-        // Therefore, put an empty 1pt x 1pt SKView in the window. It shouldn't interfere with the framerate, but
-        // should cause the CADisplayLink callbacks to match the timing of drawing.
-        
+
         let scene = SKScene()
         sceneView.presentScene(scene)
-        UIApplication.sharedApplication().keyWindow?.addSubview(sceneView)
+        UIApplication.shared.keyWindow?.addSubview(sceneView)
     }
-    
+
     func stop() {
         sceneView.removeFromSuperview()
         self.displayLink.invalidate()
     }
-    
+
     func clearLastSecondOfFrameTimes() {
-        
+
     }
-    
+
     func droppedFrameCountInLastSecond() -> Int {
         var droppedFrameCount = 0
-        
+
         let kNormalFrameDuration = 1.0 / Double(ViewFaster.kHardwareFramesPerSecond)
         let lastFrameTime = CACurrentMediaTime() - kNormalFrameDuration
         for i in 0..<ViewFaster.kHardwareFramesPerSecond {
-            if 1.0 <= lastFrameTime - _lastSecondOfFrameTimes[i] {
+            if 1.0 <= lastFrameTime - lastSecondOfFrameTimes[i] {
                 droppedFrameCount += 1
             }
         }
         return droppedFrameCount
-        
     }
 }
